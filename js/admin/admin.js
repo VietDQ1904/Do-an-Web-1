@@ -24,7 +24,7 @@ function backHomePage() {
 function LogOut() {
     localStorage.setItem('isLogIn', 0);
     localStorage.setItem('userAccountIndex', '');
-    window.location.href = 'index.html';
+    window.location.href = 'admin.html';
 }
 
 // Tránh đóng modal khi thao tác trên modal-body
@@ -41,11 +41,3 @@ function cacelDelete() {
     productControlModal.style.display = 'none';
     userControlModal.style.display = 'none';
 }
-
-// Side bar
-var switchBtn = document.querySelector('.side-bar-switch');
-var sideBar = document.querySelector('.side-bar');
-
-switchBtn.addEventListener('click', function() {
-    sideBar.classList.toggle('side-bar--close');
-});
